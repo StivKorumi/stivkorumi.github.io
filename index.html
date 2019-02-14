@@ -11,35 +11,62 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <div class="row active">
-          About
+  <div class="container-fluid">
+    <div class="about" id="about">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="row active">
+            <a href="#about">About</a>
+          </div>
+          <div class="row">
+            <a href="#work">Work</a>
+          </div>
         </div>
-        <div class="row">
-          Work
+        <div class="col-md-3 offset-md-7">
+          <div class="row active name float-right">
+            Stivën Korumi
+          </div>
+          <div class="row float-right">
+            user experience designer
+          </div>
         </div>
       </div>
-      <div class="col-md-3 offset-md-7">
-        <div class="row active name float-right">
-          Stivën Korumi
-        </div>
-        <div class="row float-right">
-          user experience designer
+      <div class="row">
+        <div class="col-md-5 offset-md-7 text-right mt-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit expedita eum temporibus voluptate tempore autem? Laborum commodi mollitia rerum deleniti unde tenetur assumenda voluptatum labore autem blanditiis. Earum, vel tempora?
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-5 offset-md-7 text-right mt-1">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit expedita eum temporibus voluptate tempore autem? Laborum commodi mollitia rerum deleniti unde tenetur assumenda voluptatum labore autem blanditiis. Earum, vel tempora?
+    <div class="works" id="works">
+      <div class="card-columns">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid" src="./assets/images/work1.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work2.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work3.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work3.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work2.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work1.png" alt="work1">
+        </div>
+        <div class="card">
+          <img class="card-img img-fluid" src="./assets/images/work1.png" alt="work1">
+        </div>
       </div>
     </div>
   </div>
 </body>
 <style>
   body {
-    /* padding: 24px; */
+    padding: 24px;
     height: 100vh;
     background-image: linear-gradient(268.75deg, #000000 0.68%, rgba(0, 0, 0, 0) 99.58%),
     linear-gradient(0.19deg, #000000 0.36%, rgba(0, 0, 0, 0) 91.55%),
@@ -61,6 +88,21 @@
   }
   .row {
     padding: 4px;
+  }
+  @media (min-width: 768px) {
+    .card-columns {column-count: 3;}
+  }
+  @media (min-width: 992px) { 
+    .card-columns {column-count: 3;}
+  }
+  @media (min-width: 1200px) {  
+    .card-columns {column-count: 3;} 
+  }
+  a {
+    color: #FFF;
+  }
+  .works {
+    margin-top: 50px;
   }
 </style>
 </html>
